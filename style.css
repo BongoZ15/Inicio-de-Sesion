@@ -1,0 +1,162 @@
+
+body
+{
+    background-image:url(https://wallpaperaccess.com/full/34650.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px, 1080px;
+}
+
+
+
+.title
+{
+    color:aliceblue;
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+}
+
+h1
+{
+    color:aliceblue;
+    font-family: 'Teko', sans-serif;
+}
+
+a
+{
+    color:#333;
+    font-size: 14px;
+    text-decoration: none;
+    margin:15px 0;
+}
+
+button
+{
+    font-family: 'Teko', sans-serif;
+    border-radius: 25px;
+    border: 1px solid #120B3E;
+    background-color: #120B3E;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:active
+{
+    transform: scale(0.95);
+}
+
+button:focus
+{
+    outline: none;
+}
+
+button:hover
+{
+    transition: all .3s;
+    text-shadow: 3px 2px 1px #2003fc;
+    box-shadow: 
+    0 0 10px #fff, -10px 0 10px #f0f, 10px 0 10px #0ff;
+}
+
+button.ghost
+{
+    background-color: transparent;
+    color: #fff;
+}
+
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]
+{
+	width:180px;
+    height: 30px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:15px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #000;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #000;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #000;
+    color: white;
+  }
+
+.block {
+	position: relative;
+	margin: 50px auto 0;
+	width: 500px;
+	height: 520px;
+	background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
